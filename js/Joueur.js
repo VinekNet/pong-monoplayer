@@ -99,7 +99,8 @@ class Joueur extends ElementHtml{
     incrementeScore(points){
         this.score+=points;
         this._effetScore();
-        this.$score.text(this.score);
+        this.$score.text("Score: " + this.score);
+        
     }
     /**
      * Effet visuel (et sonore) qui se produit quand on touche la balle
@@ -107,6 +108,7 @@ class Joueur extends ElementHtml{
     effetToucheBalle(){
         ElementHtml.effetCss(this.$raquette,"touche-balle");
         audio.playNote();
+        joueur1.incrementeScore(10);
     }
     /**
      * Effet visuel qui se produit quand on gagne des points
@@ -120,7 +122,7 @@ class Joueur extends ElementHtml{
      */
     gagne(){
         //on aumente son score
-        this.incrementeScore(10);
+
         this._rafraichitHTML();
         audio.fausseNote();
         partie.demarreNouveauJeu();

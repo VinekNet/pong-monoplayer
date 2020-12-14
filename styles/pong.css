@@ -88,7 +88,7 @@ body{
 /** le score du joueur **/
 .score{
     top: 90%;
-    left: -20%;
+    left: -15%;
     width: 50%;
     height: 100%;
     display: flex;

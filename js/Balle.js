@@ -124,7 +124,7 @@ class Balle extends ElementHtml {
      */
     calculeVariablesQuiDependentDeLaTailleDeLEcran() {
         this.vitesseMax = terrain.largeur / 100;
-        this.acceleration = terrain.largeur / 7000;
+        this.acceleration = terrain.largeur / 2000;
         this.vitesseDepart = terrain.largeur / 500;
     }
     /**
@@ -198,7 +198,7 @@ class Balle extends ElementHtml {
         }
         //perdu ?
         if (this._toucheCoteGauche()) {
-            joueur2.gagne();
+            joueur1.gagne();
         }
         if (this._toucheCoteDroite()) {
             joueur1.gagne();
@@ -206,7 +206,7 @@ class Balle extends ElementHtml {
     }
 
     /**
-     * Renvoie true si la balle touche la raquette gauche
+     * Renvoie true si la balle touche le joueur 1
      * @private
      * @returns {boolean}
      */
@@ -223,7 +223,7 @@ class Balle extends ElementHtml {
     }
 
     /**
-     * Renvoie true si la balle touche la raquette droite
+     * Renvoie true si la balle touche le joueur 2
      * @private
      * @returns {boolean}
      */
