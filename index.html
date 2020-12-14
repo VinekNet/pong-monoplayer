@@ -12,15 +12,17 @@
                 <!-- On garde les sauts de ligne pour éviter une difficulté de lecture-->
                 <br><br> 
                 <br><br>
+                <br><br>
                 Utilise les touches <br><br>
                 <span class="touche">↑</span> 
                     et 
                 <span class="touche">↓</span> 
             </div>
 
+            Tu as 5 vies <br><br>
             <a href="#" class="btn btn-go">JOUER</a>
         </div>
-
+       
         <div class="terrain">
             <!-- Les touches-->
             <div class="touche top left"        id="monte1">↑</div>
@@ -29,7 +31,7 @@
             <div class="touche bottom right"    id="descend2">↑</div>
             <!-- Les scores-->
             <div class="score score1">Score: 0</div>
-
+            <div class="vie vie1">Vies: ♥♥♥♥♥</div>
             <!-- La balle-->
             <div class="balle"></div>
             <!-- Les raquettes-->
@@ -48,6 +50,7 @@
         <script type="text/javascript" src="js/Partie.js"></script>
         <script type="text/javascript" src="js/pong.js"></script>
     </body>
+    
     <script>
         //prévention de cache
         $("script").each(function(){

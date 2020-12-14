@@ -7,6 +7,7 @@ class Terrain extends ElementHtml{
          * @type {JQuery<HTMLElement>}
          */
         this.$ecranDebut = $(".ecran-debut");
+        this.$ecranRestart = $(".ecran-restart");
     }
 
     /**
@@ -16,17 +17,29 @@ class Terrain extends ElementHtml{
         //masque ecran de début
         this.$ecranDebut.addClass("invisible");
     }
+    afficheEcranDebut(){
+        //masque ecran de début
+        this.$ecranDebut.addClass("visible");
+    }
     /**
      * Met le terrain en mode pause
      */
     affichePause(){
-        this.$element.addClass("pause")
+        this.$element.addClass("pause");
     }
 
     /**
      * Met le terrain en mode play
      */
     affichePlay(){
-        this.$element.removeClass("pause")
+        this.$element.removeClass("pause");
     }
+/**masqueEcranRestart(){
+    //masque ecran de début
+    this.$ecranRestart.addClass("invisible");
+}
+AfficheEcranRestart(){
+    //masque ecran de début
+    this.$ecranRestart.addClass("visible");
+}**/
 }

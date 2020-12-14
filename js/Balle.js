@@ -124,7 +124,7 @@ class Balle extends ElementHtml {
      */
     calculeVariablesQuiDependentDeLaTailleDeLEcran() {
         this.vitesseMax = terrain.largeur / 100;
-        this.acceleration = terrain.largeur / 2000;
+        this.acceleration = terrain.largeur / 7000;
         this.vitesseDepart = terrain.largeur / 500;
     }
     /**

@@ -99,6 +99,19 @@ body{
     opacity: 0.2;
     transition: color 0.5s;
 }
+.vie{
+    top: 90%;
+    left: 65%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color:var(--couleur-elements);
+    opacity: 0.2;
+    transition: color 0.5s;
+}
 
 
 
@@ -163,11 +176,42 @@ body{
     opacity: 1;
     filter: blur(0px);
 }
+
 .ecran-debut.invisible{
     pointer-events: none;
     opacity: 0;
     filter: blur(16px);
 }
+.ecran-debut.visible{
+    pointer-events: all;
+    opacity: 1;
+    filter: blur(16px);
+}
+/**.ecran-restart>*{
+    margin: 10px;
+}
+.ecran-restart .touche{
+    display: inline-flex;
+    transform: rotate(0deg) !important;
+}
+
+/* disparition de l'écran de début */
+/**.ecran-restart{
+    transition: all 2s;
+    transition-duration: 1s;
+    will-change: opacity, filter;
+    opacity: 1;
+    filter: blur(0px);
+}
+.ecran-restart.visible{
+    pointer-events: none;
+    opacity: 1;
+}
+.ecran-restart.invisible{
+    pointer-events: none;
+    opacity: 0;
+    filter: blur(16px);
+} 
 
 /* un simple bouton (utilisé uniquement sur l'écran de début) */
 .btn{
