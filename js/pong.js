@@ -9,13 +9,13 @@ let terrain=new Terrain($(".terrain"));
  */
 let balle=new Balle($(".balle"));
 /**
- * Le joueur à gauche
+ * La raquette gauche du joueur
  * @type {Joueur}
  */
 let joueur1=new Joueur($(".joueur1"),$(".score1"),$("#monte1"),$("#descend1"));
 
 /**
- * Le joueur à droite
+ * La raquette droite du joueur
  * Ici, pour que ce soit plus lisible, on saute des lignes mais c'est pareil que pour joueur 1
  * @type {Joueur}
  */

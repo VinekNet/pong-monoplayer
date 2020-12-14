@@ -2,16 +2,16 @@ html{
     margin: 0;
     padding:0;
     overflow: hidden;
-    --couleur-fond:#000;
-    --couleur-elements:#FFF;
-    --couleur-on-sait-pas-trop:#808080;
-    --couleur-on-sait-pas-trop-foncee:#222;
-    --couleur-erreur:#F00;
-    --couleur-succes:#0f0;
+    --couleur-fond:#FFF;
+    --couleur-elements:rgb(228, 4, 79);
+    --couleur-on-sait-pas-trop:#f705ff;
+    --couleur-on-sait-pas-trop-foncee:rgb(172, 4, 238);
+    --couleur-erreur:rgb(30, 6, 168);
+    --couleur-succes:rgb(255, 70, 193);
 }
 body{
     background-color: var(--couleur-fond);
-    color: #ffffff;
+    color: #f845f8;
     font-family: monospace;
     display: flex;
     justify-content: center;
@@ -49,7 +49,7 @@ body{
 
 .balle{
     transition: color 2s;
-    background-color: #fff;
+    background-color: rgb(162, 0, 255);
     --diamettre:20px;
     width: var(--diamettre);
     height: var(--diamettre);
@@ -60,7 +60,7 @@ body{
 
 .raquette{
     --hauteur:25%;
-    background-color: #fff;
+    background-color: rgb(255, 0, 128);
     width: 10px;
     height:var(--hauteur);
     outline: 1px solid var(--couleur-fond);
@@ -75,7 +75,7 @@ body{
 }
 
 .raquette.touche-balle{
-    background-color: #0f0;
+    background-color: rgb(251, 139, 255);
 }
 .raquette.rate-balle{
     background-color: var(--couleur-erreur);
@@ -85,10 +85,10 @@ body{
     color:var(--couleur-succes) !important;
 }
 
-/** les scores des joueurs **/
+/** le score du joueur **/
 .score{
-    top: 0;
-    left: 0;
+    top: 90%;
+    left: -20%;
     width: 50%;
     height: 100%;
     display: flex;
@@ -99,9 +99,7 @@ body{
     opacity: 0.2;
     transition: color 0.5s;
 }
-.score2{
-    left:50%;
-}
+
 
 
 
@@ -139,7 +137,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.8);
+    background: rgba(255, 181, 209, 0.8);
     z-index: 1;
     display: flex;
 

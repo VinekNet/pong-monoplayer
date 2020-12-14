@@ -19,8 +19,6 @@ class Partie {
         this.$btnGo.on("click",function (e) {
             e.preventDefault();
             me.demarreNouveauJeu();
-            //plein écran
-            $("body")[0].requestFullscreen();
         });
         //une boucle qui fait tourner notre jeu
         setInterval(() => {
